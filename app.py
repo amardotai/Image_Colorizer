@@ -22,7 +22,7 @@ def main(request: Request):
 
 @app.get("/about")
 def main(request: Request):
-    return templates.TempalteResponse("about.html",{"request": request})
+    return templates.TemplateResponse("about.html",{"request": request})
 
 @app.post("/upload")  # This is the endpoint for the API for the CLI
 async def upload_image(file: UploadFile, request: Request):
@@ -79,4 +79,4 @@ def main(request: Request):
     return templates.TemplateResponse("upload.html", {"request": request})
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=os.environ.get('PORT'))
+    uvicorn.run(app, host="127.0.0.1", port=os.environ.get('PORT',5000))
