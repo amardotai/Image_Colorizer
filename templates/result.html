@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/index.css" />
+    <title>Results</title>
+  </head>
+  <body>
+    <h1>Colorized Image Result</h1>
+    <img
+      src="static/colorized_image.{{extension}}"
+      alt="Colorized Image"
+      id="result_image"
+    />
+
+    <div class="button_container">
+      <a href="{{download_link}}" download id="download_btn">
+        <button class="submit">
+          <span class="text">Save Image</span>
+          <span>Download</span>
+        </button>
+      </a>
+
+      <a href="javascript:history.back()">
+        <button class="submit">
+          <span class="text">🏠 Home</span>
+          <span>Let's Go</span>
+        </button>
+      </a>
+    </div>
+  </body>
+</html>

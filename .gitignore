@@ -1,0 +1,6 @@
+*.pt
+/training/data
+/training/models
+/.vscode
+models
+models/colorization_models.zip

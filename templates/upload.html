@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Colorizer</title>
+    <link rel="stylesheet" href="/static/index.css" />
+  </head>
+  <body
+    style="
+      background-image: url('static/images/bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <center>
+      <div class="container">
+        <h1 style="color: #fff" class="title">Image Colorizer</h1>
+
+        <form
+          action="/upload_image"
+          enctype="multipart/form-data"
+          method="post"
+        >
+          <div class="form-group">
+            <div class="subtitle">Upload a GreyScale Image</div>
+
+            <div class="input-container ic2">
+              <input class="form-control" id="file" name="file" type="file" />
+              <br />
+            </div>
+          </div>
+          <button type="submit" class="submit" role="button">
+            <span class="text">Submit</span>
+            <span>Colorize 👍</span>
+          </button>
+          {% if error %}
+          <p class="alert">😥 please choose an image</p>
+          {% endif %}
+        </form>
+      </div>
+    </center>
+  </body>
+</html>
