@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/static/about.css" />
     <link
       rel="apple-touch-icon"
@@ -25,14 +31,16 @@
   </head>
   <body>
     <nav>
-      <a href="">Home</a>
-      <a href="">Source</a>
-      <a href="">Docs</a>
+      <a href="/about" class="nav-links">About</a>
+      <a href="/" class="nav-links">Home</a>
+      <a href="https://github.com/amardotai/Image_Colorizer" class="nav-links"
+        >Source Code</a
+      >
     </nav>
     <div class="container">
       <table>
         <tr>
-          <td>
+          <td class="td-odd">
             <div
               class="card"
               style="background-image: url('/static/images/amar.jpeg')"
@@ -48,10 +56,10 @@
               </div>
             </div>
           </td>
-          <td>
+          <td class="td-odd">
             <div
               class="card"
-              style="background-image: url('/static/images/sambhav.jpeg')"
+              style="background-image: url('/static/images/sambhav.jpg')"
             >
               <div class="glass-container">
                 <p class="heading">Sambhav Prabhat Singh</p>
@@ -66,7 +74,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="td-even">
             <div
               class="card"
               style="background-image: url('/static/images/yash.jpg')"
@@ -82,7 +90,7 @@
               </div>
             </div>
           </td>
-          <td>
+          <td class="td-even">
             <div
               class="card"
               style="background-image: url('/static/images/chetan.jpg')"

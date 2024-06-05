@@ -2,4 +2,5 @@
 /training/data
 /training/models
 /.vscode
-/__pycache__
+__pycache__
+/training
