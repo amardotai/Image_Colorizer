@@ -1,5 +1,4 @@
 *.pt
 /training
-/training/models
 /.vscode
 __pycache__
